@@ -44,6 +44,17 @@ Includes additional hardware configurations and support, including:
 
 **Important:** Use the Recovery EFI for installation and the Full EFI for normal system booting.
 
+## Installation Prerequisite
+
+This repository assumes that users already know how to generate the `com.apple.recovery.boot` folder using OpenCore. Generating the macOS Recovery files is not covered in this repository.
+
+## Post-installation
+
+After installing macOS, users need to:
+
+- Run `mykextinstaller`.
+- Use `codec-info` to get AppleHDA working again.
+
 ## Graphics Compatibility
 
 The AMD Radeon Vega 6 is the integrated graphics solution used for macOS graphics.
